@@ -1,8 +1,6 @@
 import React from 'react';
 import './Signin.css';
 
-
-
 class Signin extends React.Component {
   constructor(props){
     super(props);
@@ -22,7 +20,6 @@ class Signin extends React.Component {
     })
   }
   onSubmitSignIn =() =>{
-
     fetch("http://localhost:4000/signin", {
       method: 'post',
       headers: {'Content-type': 'application/json'},
